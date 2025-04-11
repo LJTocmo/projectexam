@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LEONEL</h1>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="about.html" class="active">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="project.html">PROJECT</a>
+        </nav>
+    </header>
+
+    <div class="maincontainer">
+        <div class="container">
+            <h1>About My self</h1>
+            <p>My name is Leonel Jay B. Tocmo. A College student with a course of Information Technology at GCC college. Aspiring to be a Developer and maybe a Cybersecurity</p>
+        </div>
+        <div class="container">
+            <h1>About My self</h1>
+            <p> I am currently live at Pr. Almond Brgy. Anakan Gingoog City.</p>
+        </div>
+        <div class="container">
+            <h1>About My self</h1>
+            <p>I am 19 years old. Born in October 26 2004</p>
+        </div>
+        <div class="container">
+            <h1>About My self</h1>
+            <p>I am not a sport person but i play chess game. I also play online games like Roblox, Mobile Legends and Clash of Clans</p>
+        </div>
+    </div>
+</body>
+
+<style>
+    .maincontainer {
+        margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.container {
+    background-color: #e0c183;
+    padding: 20px;
+    border: 5px solid black;
+    width: 30%; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+@media (min-width: 1024px) {
+    .container {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+</style>
+</html>
+

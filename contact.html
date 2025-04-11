@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LEONEL</h1>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navLinks">
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html" class="active">CONTACT</a>
+            <a href="project.html">PROJECT</a>
+            
+        </nav>
+    </header>
+
+    <div class="maincontainer">
+        <div class="container">
+            <h1>📞 Contact Information</h1>
+            <p><strong>Phone:</strong> 0922-222-2222</p>
+            <p><strong>Email:</strong> leoneljay@example.com</p>
+            <p><strong>Address:</strong> Gingoog City, Philippines</p>
+        </div>
+    
+        <div class="container">
+            <h1>🔗 Connect with Me</h1>
+            <p>Follow me on social media:</p>
+            <p>
+                <a href="https://www.facebook.com/leoniljaytocmo.tocmo/" target="_blank">Facebook</a> |
+                <a href="https://www.tiktok.com/@taichijay.melioda?is_from_webapp=1&sender_device=pc" target="_blank">Tiktok</a> |
+                <a href="" target="_blank">Github</a>
+            </p>
+        </div>
+    
+        <div class="container">
+            <h1>📩 Send a Message</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+<style>
+
+
+
+.maincontainer {
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.container {
+    background: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+    background-color: #e0c183;
+    padding: 20px;
+    border: 5px solid #4c2e0c;
+    width: 30%;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #4c2e0c;
+}
+
+p, label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4c2e0c;
+}
+
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6d4c23;
+}
+
+a:hover {
+    color: #4c2e0c;
+    text-decoration: underline;
+}
+
+
+form input, form textarea {
+    width: 80%;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #4c2e0c;
+    background-color: #f5e1a4;
+}
+
+form button {
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: #6d4c23;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #492f17;
+}
+
+form button:hover {
+    background-color: #6d4c23;
+    color: #fff;
+    border: 2px solid #492f17;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(-2px, -2px);
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+</style>
+</html>
+

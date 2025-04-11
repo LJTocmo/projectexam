@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #d8bb78;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    color: #492f17;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a68849;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #492f17;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Vintage Hover Effect */
+nav a:hover {
+    background-color: #6d4c23;
+    color: #fff;
+    border: 2px solid #492f17;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(-2px, -2px);
+}
+
+/* Active Link Style */
+nav a.active {
+    background-color: #6d4c23;
+    color: #fff;
+    border: 2px solid #492f17;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(-2px, -2px);
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background: #492f17;
+    display: block;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #a68849;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav a {
+        padding: 10px;
+        display: block;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .menu-open nav {
+        display: flex;
+    }
+    
+    .menu-open .menu-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menu-open .menu-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-open .menu-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

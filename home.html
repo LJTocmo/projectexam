@@ -1,0 +1,134 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>LEONEL</h1>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navLinks">
+            <a href="home.html" class="active">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="project.html">PROJECT</a>
+            
+        </nav>
+    </header>
+
+    <div class="maincontainer">
+        <div class="firstcon">
+            <img src="weeee.jpg" alt="Wanted Person">
+        </div>
+        <div class="secondcon">
+            <h1>Welcome Everyone to My First Website!</h1>
+            <p> Hello, and thank you for visiting my very first website! I’m a current Bachelor of Science in Information Technology (BSIT) student with a deep passion for technology and web development. As I start on this exciting journey of learning and growing, this website is a key part of my learning process. </p>
+            
+            
+            <button class="know-more" onclick="about()">Know More</button>
+        </div>
+    </div>
+</body>
+
+<style>
+    /* styles.css */
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e0c183;
+    padding: 20px;
+    border: 5px solid black;
+    width: 65%;
+    margin: 50px auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.firstcon {
+    flex: 1;
+}
+
+.firstcon .wanted {
+    font-size: 50px;
+    font-weight: bold;
+    color: #4c2e0c;
+    margin-bottom: 20px;
+}
+
+.firstcon img {
+    width: 300px;
+    height: auto;
+    border: 3px solid black;
+}
+
+.secondcon {
+    flex: 1;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4c2e0c;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.know-more {
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: #6d4c23;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid #492f17;
+}
+
+.know-more:hover {
+    background-color: #6d4c23;
+    color: #fff;
+    border: 2px solid #492f17;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(-2px, -2px);
+}
+
+@media (max-width: 768px) {
+    .maincontainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstcon img {
+        max-width: 250px;
+    }
+
+    .secondcon h2 {
+        font-size: 30px;
+    }
+
+    .secondcon h3 {
+        font-size: 20px;
+    }
+
+    .secondcon p {
+        font-size: 18px;
+    }
+}
+</style>
+</html>
+
